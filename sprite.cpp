@@ -44,6 +44,8 @@ bool Sprite::ApplySurface(int x, int y, SDL_Texture *tex, SDL_Renderer *rend){
     pos.y = y;
     SDL_QueryTexture(tex, NULL, NULL, &pos.w, &pos.h);
     SDL_RenderCopy(rend, tex, NULL, &pos);
+
+return true;
 }
 
 

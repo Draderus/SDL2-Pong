@@ -176,6 +176,8 @@ int Game::Init(const char* title, int width, int height,
     
     // print our success
 	printf("Game Initialised Succesfully\n");
+
+return 0;
 }
 
 
