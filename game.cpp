@@ -47,91 +47,91 @@ int Game::Init(const char* title, int width, int height,
     }
     
     backgroundSprite = NULL;
-    backgroundSprite = Sprite::Load("bg.bmp", renderer);
+    backgroundSprite = Sprite::Load("Data/bg.bmp", renderer);
     
     background = new Sprite(400, 300, 800, 600, 0, backgroundSprite);
     
     
     paddleSprite = NULL;
-    paddleSprite = Sprite::Load("paddle.bmp", renderer);
+    paddleSprite = Sprite::Load("Data/paddle.bmp", renderer);
     
     paddle = new Sprite(125, 300, 30, 8, 0, paddleSprite);
 	
 	
     paddleSprite2 = NULL;
-    paddleSprite2 = Sprite::Load("paddle.bmp", renderer);
+    paddleSprite2 = Sprite::Load("Data/paddle.bmp", renderer);
     
     paddle2 = new Sprite(675, 300, 30, 8, 0, paddleSprite2);
     
     
     ballSprite = NULL;
-    ballSprite = Sprite::Load("ball.bmp", renderer);
+    ballSprite = Sprite::Load("Data/ball.bmp", renderer);
     
     ball = new Sprite(400, 300, 8, 8, 0, ballSprite);
     
     
     zero = NULL;
-    zero = Sprite::Load("0.bmp", renderer);
+    zero = Sprite::Load("Data/0.bmp", renderer);
     
     one = NULL;
-    one = Sprite::Load("1.bmp", renderer);
+    one = Sprite::Load("Data/1.bmp", renderer);
     
     two = NULL;
-    two = Sprite::Load("2.bmp", renderer);
+    two = Sprite::Load("Data/2.bmp", renderer);
     
     three = NULL;
-    three = Sprite::Load("3.bmp", renderer);
+    three = Sprite::Load("Data/3.bmp", renderer);
     
     four = NULL;
-    four = Sprite::Load("4.bmp", renderer);
+    four = Sprite::Load("Data/4.bmp", renderer);
     
     five = NULL;
-    five = Sprite::Load("5.bmp", renderer);
+    five = Sprite::Load("Data/5.bmp", renderer);
     
     six = NULL;
-    six = Sprite::Load("6.bmp", renderer);
+    six = Sprite::Load("Data/6.bmp", renderer);
     
     seven = NULL;
-    seven = Sprite::Load("7.bmp", renderer);
+    seven = Sprite::Load("Data/7.bmp", renderer);
     
     eight = NULL;
-    eight = Sprite::Load("8.bmp", renderer);
+    eight = Sprite::Load("Data/8.bmp", renderer);
     
     nine = NULL;
-    nine = Sprite::Load("9.bmp", renderer);
+    nine = Sprite::Load("Data/9.bmp", renderer);
     
     ten = NULL;
-    ten = Sprite::Load("10.bmp", renderer);
+    ten = Sprite::Load("Data/10.bmp", renderer);
     
     eleven = NULL;
-    eleven = Sprite::Load("11.bmp", renderer);
+    eleven = Sprite::Load("Data/11.bmp", renderer);
     
     twelve = NULL;
-    twelve = Sprite::Load("12.bmp", renderer);
+    twelve = Sprite::Load("Data/12.bmp", renderer);
     
     thirteen = NULL;
-    thirteen = Sprite::Load("13.bmp", renderer);
+    thirteen = Sprite::Load("Data/13.bmp", renderer);
     
     fourteen = NULL;
-    fourteen = Sprite::Load("14.bmp", renderer);
+    fourteen = Sprite::Load("Data/14.bmp", renderer);
     
     fifteen = NULL;
-    fifteen = Sprite::Load("15.bmp", renderer);
+    fifteen = Sprite::Load("Data/15.bmp", renderer);
     
     sixteen = NULL;
-    sixteen = Sprite::Load("16.bmp", renderer);
+    sixteen = Sprite::Load("Data/16.bmp", renderer);
     
     seventeen = NULL;
-    seventeen = Sprite::Load("17.bmp", renderer);
+    seventeen = Sprite::Load("Data/17.bmp", renderer);
     
     eighteen = NULL;
-    eighteen = Sprite::Load("18.bmp", renderer);
+    eighteen = Sprite::Load("Data/18.bmp", renderer);
     
     nineteen = NULL;
-    nineteen = Sprite::Load("19.bmp", renderer);
+    nineteen = Sprite::Load("Data/19.bmp", renderer);
     
     twenty = NULL;
-    twenty = Sprite::Load("20.bmp", renderer);
+    twenty = Sprite::Load("Data/20.bmp", renderer);
     
     
     p1points = new Sprite(230, 140, 64, 32, 0, zero);
@@ -163,7 +163,7 @@ int Game::Init(const char* title, int width, int height,
         printf("Unable to initialize audio: %s\n", Mix_GetError());
         exit(1);
     }
-    sound = Mix_LoadWAV("bounce.wav");
+    sound = Mix_LoadWAV("Data/bounce.wav");
     if(sound == NULL) {
         printf("Unable to load WAV file: %s\n", Mix_GetError());
     }
